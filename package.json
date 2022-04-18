@@ -7,7 +7,8 @@
     "license": "MIT",
     "scripts": {
         "build": "webpack --mode production",
-        "start": "webpack-dev-server --open"
+        "start": "webpack-dev-server --open",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build  && npm start"
     },
     "dependencies": {
         "formik": "^2.1.4",
