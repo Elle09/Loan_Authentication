@@ -6,7 +6,7 @@
            },
     "license": "MIT",
     "scripts": {
-        "build": "webpack --mode production",
+        "build": "webpack --mode production build --output public",
         "start": "webpack-dev-server --open",
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build  && npm start"
     },
